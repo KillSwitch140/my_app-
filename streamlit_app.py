@@ -6,7 +6,7 @@ st.title("Interview setup page for Interviewer")
 save_dir = 'src/data/originals'
 os.makedirs(save_dir, exist_ok=True)
 
-uploaded_file = st.file_uploader("Upload interview file", type=("csv"))
+uploaded_file = st.file_uploader("Upload interview file")
 
 if st.button('Submit', key='submit_button'):
     if uploaded_file is not None:
